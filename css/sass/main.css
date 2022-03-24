@@ -1,35 +1,69 @@
 nav {
   max-width: 400px;
   height: 100%;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
   position: fixed;
-  border-width: 1px;
-  border-style: solid;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-nav h1 {
+nav .logo {
+  width: 100%;
+  height: 10%;
+  background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+}
+nav .logo h1 {
   font-family: "Italianno", cursive;
   font-size: 75px;
   white-space: pre-line;
   text-align: center;
   line-height: 25px;
+  color: #e2d1c3;
+  text-shadow: 1px 10px 4px black;
 }
-nav h1 span {
+nav .logo h1 span {
   font-family: "Amiri", serif;
   font-size: 30px;
 }
 nav ul {
-  width: 50%;
+  width: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   padding: 0;
 }
 nav ul li {
   padding: 30px 0;
   list-style-type: none;
 }
+nav ul li a {
+  border-width: 2px;
+  border-style: dashed;
+  padding: 20px 40px;
+  border-radius: 40%;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  color: #303030;
+  text-decoration: none;
+  font-size: 25px;
+}
 nav iframe {
+  height: 20%;
   padding: 0 15px;
+}
+nav .reseau {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .reseau a img {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  border-style: dashed;
+  border-color: #303030;
+  border-radius: 40%;
+  padding: 20px;
+  width: 30px;
 }/*# sourceMappingURL=main.css.map */
