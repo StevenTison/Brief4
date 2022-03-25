@@ -83,6 +83,7 @@ section {
   gap: 20px;
   justify-items: center;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 section article:nth-child(1) {
   position: relative;
