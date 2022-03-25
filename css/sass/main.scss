@@ -3,6 +3,9 @@
 
 @import 'vendors/bootstrap';
 
+@import 'pages/home';
+@import 'pages/contact';
+
 @import 'base/reset';
 @import 'base/typography';
 
@@ -17,9 +20,6 @@
 @import 'components/carousel';
 @import 'components/cover';
 @import 'components/dropdown';
-
-@import 'pages/home';
-@import 'pages/contact';
 
 @import 'themes/admin';
 @import 'themes/theme';

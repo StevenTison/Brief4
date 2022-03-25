@@ -2,8 +2,9 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    margin-left: 20%;
+    margin-left: 25%;
     justify-items: center;
+    padding-top: 20px;
     article:nth-child(1) {
         @include article;
     }
