@@ -1,24 +1,80 @@
 footer {
-    p:nth-child(1) {
-
-    }
-    ul:nth-child(1) {
-        li {
-
+    margin-left: 20%;
+    font-family: 'Maitree', serif;
+    background-image: $fourth-background-image;
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    .contact {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+            width: 80%;
+            color: #FFFFFF;
+            text-decoration: solid;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            img {
+                background-image: $secondary-background-image;
+                border-style: dotted;
+                border-color: #303030;
+                border-radius: 40%;
+                padding: 10px;
+                width: 25px;
+                height: 25px;
+                span {
+                }
+            }
         }
     }
-    p:nth-child(2) {
-
+    .suivre {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        align-items: center;
+        justify-content: space-evenly;
+        a {
+            img {
+                background-image: $secondary-background-image;
+                border-style: dotted;
+                border-color: #303030;
+                border-radius: 40%;
+                padding: 10px;
+                width: 30px;
+                height: 30px;
+                }
+        }
+        
     }
-    ul:nth-child(3) {
-        li {
-
+    .entreprise {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        h6 {
+            font-size: 55px;
+            font-family: "Italianno", cursive;
+            white-space: pre-line;
+            text-align: center;
+            line-height: 25px;
+            color: #e2d1c3;
+            text-shadow: 1px 10px 4px black;
+            margin: 0;
+            span {
+                font-family: "Amiri", serif;
+                font-size: 25px;
+            }
+        }
+        p {
+            text-align: center;
+            margin: 0;
         }
     }
-    p:nth-child(3) {
-
-    }
-    p:nth-child(4) {
-
+    .copyright {
+        align-self: flex-end;
+        text-align: center;
     }
 }

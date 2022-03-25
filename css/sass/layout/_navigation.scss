@@ -7,6 +7,7 @@ nav {
     flex-direction: column;
     align-items: center;
     align-content: center;
+    font-family: "Amiri", serif;
     .logo {
         width: 100%;
         height: 150px;
@@ -37,7 +38,7 @@ nav {
             list-style-type: none;
             a {
                 border-style: dashed;
-                padding: 20px 40px;
+                padding: 10px 40px;
                 background-image: $secondary-background-image;
                 color: #303030;
                 text-decoration: none;
@@ -46,7 +47,7 @@ nav {
         }
     }
     .map {
-        height: 20%;
+        height: 250px;
         border-style: dashed;
         border-color: #303030;
     }
@@ -57,7 +58,7 @@ nav {
         justify-content: space-evenly;
         align-items: center;
         a {
-            padding-top: 10px;
+            padding-top: 30px;
             img {
                 background-image: $secondary-background-image;
                 border-style: dashed;
