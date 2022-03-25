@@ -1,5 +1,5 @@
 nav {
-    max-width: 400px;
+    width: 20%;
     height: 100%;
     background-image: $third-background-image;
     position: fixed;
@@ -8,7 +8,7 @@ nav {
     align-items: center;
     .logo {
         width: 100%;
-        height: 10%;
+        height: 150px;
         background-image: $fourth-background-image;
         h1 {
             font-family: "Italianno", cursive;
