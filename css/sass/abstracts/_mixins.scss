@@ -1,0 +1,27 @@
+@mixin article {
+    position: relative;
+        img {
+            width: 300px;
+            height: 400px;
+        }
+        p{
+            font-size: 20px;
+            font-family: 'Maitree', serif;
+            background-image: $fifth-background-image;
+            width: fit-content;
+            padding: 3px;
+            border-radius: 20%;
+            position: absolute;
+            bottom: 0;
+            left: 2%;
+        }
+        .prix {
+            font-size: 20px;
+            text-shadow: 2px 0 0 #303030, 2px 2px 0 #303030, 0 2px 0 #303030, -2px 2px 0 #303030, -2px 0 0 #303030, -2px -2px 0 #303030, 0 -2px 0 #303030, 2px -2px 0 #303030;
+            font-family: 'Amiri', serif;
+            position: absolute;
+            color: #FFFFFF;
+            top: 5%;
+            right: 5%;
+        }
+}

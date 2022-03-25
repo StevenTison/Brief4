@@ -36,10 +36,8 @@ nav {
             padding: 30px 0;
             list-style-type: none;
             a {
-                border-width: 2px;
                 border-style: dashed;
                 padding: 20px 40px;
-                border-radius: 40%;
                 background-image: $secondary-background-image;
                 color: #303030;
                 text-decoration: none;
@@ -47,9 +45,10 @@ nav {
             }
         }
     }
-    iframe {
+    .map {
         height: 20%;
-        padding: 0 15px;
+        border-style: dashed;
+        border-color: #303030;
     }
     .reseau {
         width: 100%;
@@ -58,6 +57,7 @@ nav {
         justify-content: space-evenly;
         align-items: center;
         a {
+            padding-top: 10px;
             img {
                 background-image: $secondary-background-image;
                 border-style: dashed;
