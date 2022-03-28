@@ -1,4 +1,5 @@
 nav {
+    margin: 0;
     width: 20%;
     height: 100%;
     background-image: $third-background-image;
@@ -9,10 +10,14 @@ nav {
     align-content: center;
     font-family: "Amiri", serif;
     .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 150px;
         background-image: $fourth-background-image;
         h1 {
+            margin: 0;
             font-family: "Italianno", cursive;
             font-size: 75px;
             white-space: pre-line;
@@ -27,18 +32,19 @@ nav {
         }
     }
     ul {
+        margin: 0;
         width: 100%;
-        height: 40%;
+        height: 45%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding: 0;
         li {
             list-style-type: none;
             a {
                 border-style: dashed;
-                padding: 10px 40px;
+                padding: 5px 40px;
                 background-image: $secondary-background-image;
                 color: #303030;
                 text-decoration: none;
@@ -47,9 +53,13 @@ nav {
         }
     }
     .map {
-        height: 250px;
+        height: 255px;
         border-style: dashed;
         border-color: #303030;
+        .carte {
+            width: 250px;
+            height: 250px;
+        }
     }
     .reseau {
         width: 100%;
@@ -66,6 +76,75 @@ nav {
                 border-radius: 40%;
                 padding: 20px;
                 width: 30px;
+            }
+        }
+    }
+}
+@media  screen and (max-width: 1024px) {
+    nav {
+        .logo {
+            h1 {
+                font-size: 60px;
+                span {
+                    font-size: 25px;
+                }
+            }
+        }
+        ul {
+            height: 50%;
+            li {
+                a {
+                    padding: 5px 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+        .map {
+            height: 155px;
+            .carte {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .reseau {
+            a {
+                img {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    nav {
+        .logo {
+            h1 {
+                font-size: 40px;
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+        ul {
+            li {
+                a {
+                    font-size: 15px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        .map {
+            height: 105px;
+            .carte {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .reseau {
+            height: 22%;
+            flex-direction: column;
+            a {
+                padding: 0;
             }
         }
     }
