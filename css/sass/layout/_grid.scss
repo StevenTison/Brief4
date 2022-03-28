@@ -9,12 +9,12 @@ section {
         @include article;
     }
 }
-@media screen and (max-width: 1024px)  {
+@media screen and (max-width: 1350px)  {
     section {
         grid-template-columns: 1fr 1fr,
     }
 }
-@media screen and (max-width: 640px)  {
+@media screen and (max-width: 840px)  {
     section {
         grid-template-columns: 1fr,
     }

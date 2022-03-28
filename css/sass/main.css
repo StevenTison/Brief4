@@ -86,7 +86,7 @@ nav .reseau a img {
   width: 30px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1350px) {
   nav .logo h1 {
     font-size: 60px;
   }
@@ -111,7 +111,7 @@ nav .reseau a img {
     padding: 10px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 840px) {
   nav .logo h1 {
     font-size: 40px;
   }
@@ -175,12 +175,12 @@ section article .prix {
   right: 5%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1350px) {
   section {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 840px) {
   section {
     grid-template-columns: 1fr;
   }
@@ -280,7 +280,7 @@ footer .copyright {
   text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1350px) {
   footer .contact {
     width: 30%;
   }
@@ -313,7 +313,7 @@ footer .copyright {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 840px) {
   footer .contact a {
     padding: 10px 0;
     font-size: 10px;
