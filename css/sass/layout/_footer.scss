@@ -76,6 +76,20 @@ footer {
         text-align: center;
     }
 }
+.haut {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    img {
+        height: 30px;
+        width: 30px;
+        background-image: $secondary-background-image;
+        border-style: dotted;
+        border-color: #303030;
+        border-radius: 40%;
+        padding: 10px;
+    }
+}
 @media screen and (max-width: 1350px) {
     footer {
         .contact {
