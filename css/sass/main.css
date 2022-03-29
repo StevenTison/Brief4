@@ -2,6 +2,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+body .test {
+  padding: 0;
+}
+body .test p {
+  font-size: 20px;
+  color: #838181;
+}
+body .test .img1 {
+  width: 500px;
+  height: 500px;
+}
 
 nav {
   margin: 0;
