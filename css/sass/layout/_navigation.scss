@@ -43,8 +43,10 @@ nav {
         li {
             list-style-type: none;
             a {
+                border-width: 2px;
+                border-color: #6B8CCE;
                 border-style: dashed;
-                padding: 5px 40px;
+                padding: 0 30px;
                 background-image: $secondary-background-image;
                 color: #303030;
                 text-decoration: none;
@@ -55,7 +57,8 @@ nav {
     .map {
         height: 255px;
         border-style: dashed;
-        border-color: #303030;
+        border-color: #6B8CCE;
+        border-width: 2px;
         .carte {
             width: 250px;
             height: 250px;
@@ -72,7 +75,8 @@ nav {
             img {
                 background-image: $secondary-background-image;
                 border-style: dashed;
-                border-color: #303030;
+                border-color: #6B8CCE;
+                border-width: 2px;
                 border-radius: 40%;
                 padding: 20px;
                 width: 30px;
