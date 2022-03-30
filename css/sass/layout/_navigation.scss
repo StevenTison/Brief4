@@ -55,13 +55,13 @@ nav {
         }
     }
     .map {
-        height: 255px;
+        width: 90%;
         border-style: dashed;
         border-color: #6b8cce;
         border-width: 2px;
         .carte {
-            width: 250px;
-            height: 250px;
+            width: 98%;
+            height: 97%;
         }
     }
     .reseau {
@@ -103,13 +103,6 @@ nav {
                 }
             }
         }
-        .map {
-            height: 155px;
-            .carte {
-                width: 150px;
-                height: 150px;
-            }
-        }
         .reseau {
             a {
                 img {
@@ -131,43 +124,45 @@ nav {
                     font-size: 20px;
                 }
             }
-        }
-        a {
-            padding-top: 15px;
-            #burger {
-                width: 30px;
-                height: 2px;
-                background: white;
-                display: inline-block;
-                position: relative;
-            }
-            #burger::before,
-            #burger::after {
-                content: "";
-                width: 30px;
-                height: 2px;
-                background: white;
-                display: inline-block;
-                position: absolute;
-                transform-origin: center;
-                transition: all 0.3s ease;
-            }
-            #burger::before {
-                top: -7px;
-            }
-            #burger::after {
-                top: 7px;
-            }
-            #burger.open {
-                background: transparent;
-            }
-            #burger.open::before {
-                transform: rotate(45deg);
-                top: 0;
-            }
-            #burger.open::after {
-                transform: rotate(-45deg);
-                top: 0;
+            a {
+                padding-top: 15px;
+                #burger {
+                    width: 30px;
+                    height: 3px;
+                    background: black;
+                    display: inline-block;
+                    position: fixed;
+                    left: 2%;
+                    top: 13%;
+                }
+                #burger::before,
+                #burger::after {
+                    content: "";
+                    width: 30px;
+                    height: 3px;
+                    background: black;
+                    display: inline-block;
+                    position: absolute;
+                    transform-origin: center;
+                    transition: all 0.3s ease;
+                }
+                #burger::before {
+                    top: -7px;
+                }
+                #burger::after {
+                    top: 7px;
+                }
+                #burger.open {
+                    background: transparent;
+                }
+                #burger.open::before {
+                    transform: rotate(45deg);
+                    top: 0;
+                }
+                #burger.open::after {
+                    transform: rotate(-45deg);
+                    top: 0;
+                }
             }
         }
         ul {
@@ -186,12 +181,12 @@ nav {
             transform: scaleY(1);
         }
         .map {
-            height: 20%;
             background-image: $third-background-image;
             transition: all 0.5s ease;
             transform: scaleY(0);
         }
         .map.open {
+            background-image: $third-background-image;
             transform: scaleY(1);
         }
         .reseau {
@@ -210,5 +205,6 @@ nav {
     }
     nav.open {
         position: fixed;
+        background-image: $third-background-image;
     }
 }
