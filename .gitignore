@@ -4,4 +4,7 @@
 node_modules
 dist
 .cache
-.css
+main.css
+main.css.map
+normalize.css
+normalize.css.map
