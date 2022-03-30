@@ -129,6 +129,7 @@ footer {
 }
 @media screen and (max-width: 840px) {
     footer {
+        margin: 0;
         .contact {
             a {
                 padding: 10px 0;
@@ -162,5 +163,8 @@ footer {
                 font-size: 8px;
             }
         }
+    }
+    footer.open {
+        margin-left: 20%;
     }
 }

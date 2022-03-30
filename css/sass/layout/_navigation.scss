@@ -31,41 +31,6 @@ nav {
             }
         }
     }
-    #burger {
-        width: 30px;
-        height: 2px;
-        background: white;
-        display: inline-block;
-        position: relative;
-    }
-    #burger::before,
-    #burger::after {
-        content: '';
-        width: 30px;
-        height: 2px;
-        background: white;
-        display: inline-block;
-        position: absolute;
-        transform-origin: center;
-        transition: all 0.3s ease;
-    }
-    #burger.open {
-        background:transparent;
-    }
-      #burger.open::before {
-        transform: rotate(45deg);
-        top:0;
-    }
-      #burger.open::after {
-        transform: rotate(-45deg);
-        top:0;
-    }
-    #burger::before {
-        top: -7px;
-    }
-    #burger::after {
-        top: 7px;
-    }
     ul {
         margin: 0;
         width: 100%;
@@ -79,7 +44,7 @@ nav {
             list-style-type: none;
             a {
                 border-width: 2px;
-                border-color: #6B8CCE;
+                border-color: #6b8cce;
                 border-style: dashed;
                 padding: 0 30px;
                 background-image: $secondary-background-image;
@@ -92,7 +57,7 @@ nav {
     .map {
         height: 255px;
         border-style: dashed;
-        border-color: #6B8CCE;
+        border-color: #6b8cce;
         border-width: 2px;
         .carte {
             width: 250px;
@@ -110,16 +75,16 @@ nav {
             img {
                 background-image: $secondary-background-image;
                 border-style: dashed;
-                border-color: #6B8CCE;
+                border-color: #6b8cce;
                 border-width: 2px;
                 border-radius: 40%;
-                padding: 20px;
+                padding: 15px;
                 width: 30px;
             }
         }
     }
 }
-@media  screen and (max-width: 1350px) {
+@media screen and (max-width: 1350px) {
     nav {
         .logo {
             h1 {
@@ -156,7 +121,10 @@ nav {
 }
 @media screen and (max-width: 840px) {
     nav {
+        position: absolute;
+        background-image: none;
         .logo {
+            flex-direction: column;
             h1 {
                 font-size: 40px;
                 span {
@@ -164,27 +132,83 @@ nav {
                 }
             }
         }
+        a {
+            padding-top: 15px;
+            #burger {
+                width: 30px;
+                height: 2px;
+                background: white;
+                display: inline-block;
+                position: relative;
+            }
+            #burger::before,
+            #burger::after {
+                content: "";
+                width: 30px;
+                height: 2px;
+                background: white;
+                display: inline-block;
+                position: absolute;
+                transform-origin: center;
+                transition: all 0.3s ease;
+            }
+            #burger::before {
+                top: -7px;
+            }
+            #burger::after {
+                top: 7px;
+            }
+            #burger.open {
+                background: transparent;
+            }
+            #burger.open::before {
+                transform: rotate(45deg);
+                top: 0;
+            }
+            #burger.open::after {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+        }
         ul {
+            height: 40%;
+            background-image: $third-background-image;
+            transition: all 0.5s ease;
+            display: flex;
+            transform: scaleY(0);
             li {
                 a {
                     font-size: 15px;
-                    padding: 5px 10px;
                 }
             }
         }
+        ul.open {
+            transform: scaleY(1);
+        }
         .map {
-            height: 105px;
-            .carte {
-                width: 100px;
-                height: 100px;
-            }
+            height: 20%;
+            background-image: $third-background-image;
+            transition: all 0.5s ease;
+            transform: scaleY(0);
+        }
+        .map.open {
+            transform: scaleY(1);
         }
         .reseau {
-            height: 22%;
+            background-image: $third-background-image;
             flex-direction: column;
+            transition: all 0.5s ease;
+            transform: scaleY(0);
+        }
+        .reseau.open {
+            height: 23.5%;
+            transform: scaleY(1);
             a {
                 padding: 0;
             }
         }
+    }
+    nav.open {
+        position: fixed;
     }
 }
