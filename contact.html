@@ -68,7 +68,36 @@
 
   </header>
 
-  <form></form>
+  <form class="f1" > <h1>Nous contacter :</h1>
+
+    <form method="post" action="contact.php">
+
+        <h2>Dites nous en plus sur vous !</h2>
+        <p>
+            <label>Votre nom</label> : <input type="text" name="nom" id="nom" placeholder="Votre nom ici"
+                pattern="[A-Za-z' -].*" autofocus required>
+        </p>
+        <p>
+            <label>Votre prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Votre prénom ici"
+                pattern="[A-Za-z' -].*" required>
+        </p>
+        <p>
+            <label>Votre adresse mail</label> : <input type="email" name="mail" id="mail" placeholder="Votre email ici"
+                required>
+        </p>
+
+        <h3>Qu'est-ce que vous pensez de notre site ?</h3>
+        <p><input type="radio" name="avis" id="tresbien" required><label for="tresbien">Très bien</label></p>
+        <p><input type="radio" name="avis" id="bien" required><label for="bien">Bien</label></p>
+        <p><input type="radio" name="avis" id="neutre" required><label for="neutre">Neutre</label></p>
+        <p><input type="radio" name="avis" id="mauvais" required><label for="mauvais">Mauvais</label></p>
+        <p><input type="radio" name="avis" id="tresmauvais" required><label for="tresmauvais">Très mauvais</label></p>
+        <p class="avistextep"><label for="avistexte">Qu'est-ce que vous aimeriez voir améliorer sur celui-ci ?</label>
+        </p>
+        <p><textarea name="avistexte" id="avistexte" rows="10" cols="60" placeholder="Votre avis ici ..." ></textarea></p>
+        <p><input type="submit"></p>
+    </form>
+    <p class="mail">Mail : adressebidon@gmail.com</p></form>
 
   <footer>
 
