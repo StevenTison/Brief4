@@ -5,7 +5,6 @@ let ul = document.querySelector('ul');
 let map = document.querySelector('div.map');
 let reseau = document.querySelector('div.reseau');
 let nav = document.querySelector('nav');
-let grid = document.querySelector('section');
 let footer = document.querySelector('footer');
 let apropos = document.querySelector('div.apropos');
 
@@ -17,6 +16,6 @@ link.addEventListener('click', function(e) {
   map.classList.toggle('open');
   reseau.classList.toggle('open');
   nav.classList.toggle('open');
-  grid.classList.toggle('open');
   footer.classList.toggle('open');
+  apropos.classList.toggle('open');
 })
