@@ -1,14 +1,27 @@
 body{
     display: flex;
     flex-direction: column;
-    color:  #333333;
-
     .f1{
+        font-family: 'Maitree', serif;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
         flex-direction: column;
+        margin-left: 20%;
+        input[type=radio] {
+            margin-right: 5px;
+        }
+        .avistextep {
+            font-weight: bold;
+        }
+    }
+}
+@media screen and (max-width: 840px) {
+    form.f1 {
+        margin-left: 5%;
+        transition: all 0.5s ease;
+    }
+    form.f1.open {
         margin-left: 20%;
     }
 }
