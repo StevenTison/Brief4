@@ -1,32 +1,151 @@
 <!doctype html>
 <html class="no-js" lang="fr">
-
-<head>
-  <meta charset="utf-8">
-  <title>Ducsman</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Italianno&family=Maitree:wght@300&display=swap"
-    rel="stylesheet">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Ducsman - Sapés comme jamais.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+  
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+  
+    <link rel="stylesheet" href="css/sass/normalize.css">
+    <link rel="stylesheet" href="css/sass/main.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Italianno&family=Maitree:wght@300&display=swap"
+      rel="stylesheet">
+  
+    <meta name="theme-color" content="#fafafa">
+  </head>
+  
+  <body>
+  
+    <nav>
+      <div class="logo">
+        <h1>Ducsman
+          <span>Sapés comme jamais.</span>
+        </h1>
+        <a id="link" href="#"><span id="burger"></span></a>
+      </div>
+  
+      
+  
+      <ul>
+        <li><a href="index.html">BOUTIQUE</a></li>
+        <li><a href="apropos.html">A PROPOS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="sav.html">SAV</a></li>
+      </ul>
+  
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5249.611416033301!2d2.3414638287260106!3d48.861915225405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e18a5f84801%3A0x6eb5daa624bdebd2!2sHalles%20de%20Paris%2C%2075001%20Paris!5e0!3m2!1sfr!2sfr!4v1648127519342!5m2!1sfr!2sfr"
+          class="carte" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+  
+      <div class="reseau">
+        <a href="#"><img src="img/instagram.png" alt="icone instagram"></a>
+        <a href="#"><img src="img/facebook.png" alt="icone facebook"></a>
+        <a href="#"><img src="img/twitter.png" alt="icone twitter"></a>
+      </div>
+    </nav>
+  
+    <header>
+  
+      <img src="img/illustration.jpg" class="illustration" alt="illustration de costard">
+      <a href="#"><img src="img/panier.png" class="panier" alt="logo payement"></a>
+  
+    </header>
+    <form class="f1">
+  
+      <h2>Un problème avec votre achat ?</h2>
+  
+      <h3>Contactez-nous</h3>
+      <p>
+        <label>Votre nom</label> : <input type="text" name="nom" id="nom" placeholder="Votre nom ici"
+          pattern="[A-Za-z' -].*" autofocus required>
+      </p>
+      <p>
+        <label>Votre prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Votre prénom ici"
+          pattern="[A-Za-z' -].*" required>
+      </p>
+      <p>
+        <label>Votre adresse mail</label> : <input type="email" name="mail" id="mail" placeholder="Votre email ici"
+          required>
+      </p>
+  
+      <h3>Quel soucis avez-vous ?</h3>
+      <h3>Quel est votre problèmes  ?</h3>
+    <label>Problème</label> <select name="pays" id="pays">
+      <optgroup label="Chemise">
+          <option value="Problème de couture" selected>Problème de couture</option>
+          <option value="Colis non reçu">Colis non reçu</option>
+          <Option value="bouton de chemise enlevé">bouton de chemise enlevé</Option>
+          <option value="autre">autre</option>
+      </optgroup>
+      <optgroup label="Veste">
+        <option value="Problème de couture" selected>Problème de couture</option>
+          <option value="Colis non reçu">Colis non reçu</option>
+          <Option value="bouton de veste enlevé">bouton de veste enlevé</Option>
+          <option value="autre">autre</option>
+      </optgroup>
+      <optgroup label="Pantalon">
+        <option value="Problème de couture" selected>Problème de couture</option>
+        <option value="Colis non reçu">Colis non reçu</option>
+        <Option value="bouton de pantalon enlevé">bouton de pantalon enlevé</Option>
+        <option value="autre">autre</option>
+      </optgroup>
+      <p class="avistextep"><label for="avistexte">Précisez votre problème.</label>
+      </p>
+      <p><textarea name="avistexte" id="avistexte" rows="10" cols="60" placeholder="précisez votre problème ..."></textarea></p>
+      <p><input type="submit"></p>
+      <p class="mail">Mail : adressebidon@gmail.com</p>
+  
+    </form>
+  
+    <footer>
+  
+      <div class="contact">
+        <p>Nous contacter</p>
+        <a href="#"><img src="img/position.png" alt="position géographique"><span>Halle de Paris</span></a>
+        <a href="#"><img src="img/mail.png" alt="email"><span>mailbidon@gmail.com</span></a>
+        <a href="#"><img src="img/phone.png" alt="téléphone"><span>+33(6) 55 55 55 55</span></a>
+      </div>
+  
+      <div class="suivre">
+        <p>Nous suivre :</p>
+        <a href="#"><img src="img/instagram.png" alt="logo d'instagram"></a>
+        <a href="#"><img src="img/facebook.png" alt="logo de facebook"></a>
+        <a href="#"><img src="img/twitter.png" alt="logo de twitter"></a>
+      </div>
+  
+      <div class="entreprise">
+        <h6>Ducsman
+          <span>Sapés comme jamais.</span>
+        </h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum suscipit hic laudantium, veritatis
+          incidunt inventore, architecto esse obcaecati amet, velit saepe. Facere atque adipisci quia pariatur quam
+          repellendus, fugiat odit quis possimus accusantium. Delectus, repellendus sed? Nihil deleniti omnis enim illum,
+          beatae nam, sunt cum hic cumque quibusdam dolore.</p>
+      </div>
+  
+      <p class="copyright">Copyright @2022</p>
+  
+    </footer>
+  
+    <a href="#" class="haut"><img src="img/up.png" alt ="flèche vers le haut"></a>
+  
+    <script type="text/javascript" src="contact.js"></script>
 
 <body>
 
