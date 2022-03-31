@@ -1,6 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
+    color:  #333333;
 
     .f1{
         display: flex;
@@ -10,7 +11,4 @@ body{
         flex-direction: column;
         margin-left: 20%;
     }
-
-
-
 }
