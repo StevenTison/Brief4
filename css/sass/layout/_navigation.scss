@@ -52,6 +52,12 @@ nav {
                 text-decoration: none;
                 font-size: 25px;
             }
+            a:hover {
+                box-shadow: 5px 5px 5px 0 #6B8CCE;
+            }
+        }
+        li:hover {
+            transform: translate(-5px, -5px);
         }
     }
     .map {
@@ -81,6 +87,10 @@ nav {
                 border-radius: 40%;
                 padding: 15px;
                 width: 30px;
+            }
+            img:hover {
+                box-shadow: 5px 5px 5px 0 #6B8CCE;
+                transform: translate(-5px, -5px);
             }
         }
     }
