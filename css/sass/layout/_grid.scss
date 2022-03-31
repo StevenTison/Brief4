@@ -8,6 +8,10 @@ section {
     article {
         @include article;
     }
+    article:hover {
+        transform: translate(-5px, -5px);
+        box-shadow: 10px 10px 5px 0 #E2D1C3;
+    }
 }
 @media screen and (max-width: 1350px)  {
     section {
