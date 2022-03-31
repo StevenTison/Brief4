@@ -218,3 +218,23 @@ nav {
         background-image: $third-background-image;
     }
 }
+@media screen and (max-width: 500px) {
+    nav {
+        .logo {
+            h1 {
+                font-size: 25px;
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+        ul {
+            li {
+                a {
+                    padding: 3px 3px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
