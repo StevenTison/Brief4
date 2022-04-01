@@ -14,13 +14,13 @@ body{
         .avistextep {
             font-weight: bold;
         }
-        .f1-text-area
-        {
-        
-            width: 100px;
-            height: auto;
+        textarea {
+            width: 80%;
+            max-width: 100%;
         }
-
+        input[type="submit"] {
+            margin-top: 10px;
+        }
     }
 }
 @media screen and (max-width: 840px) {
