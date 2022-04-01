@@ -16,7 +16,9 @@ footer {
             text-decoration: solid;
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            gap: 5px;
+            padding: 5px 0;
             img {
                 background-image: $secondary-background-image;
                 border-style: dotted;
@@ -35,6 +37,7 @@ footer {
         align-items: center;
         justify-content: space-evenly;
         a {
+            padding: 2px 0;
             img {
                 background-image: $secondary-background-image;
                 border-style: dotted;
